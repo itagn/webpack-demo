@@ -37,7 +37,7 @@ const baseConfig = {
         use: {
           loader: 'url-loader',
           options: {
-            limit: 5 * 1024,
+            limit: config.build.file.limit,
             outputPath: path.join(config.build.sourceDir, 'img/'),
             name: '[name].[hash:7].[ext]'
           }
