@@ -1,0 +1,21 @@
+@mixin pos-mid {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+$px: 400px;
+
+#demo {
+  border: 2px solid #666;
+  text-align: center;
+  height: $px;
+  width: $px;
+  cursor: pointer;
+  @include pos-mid;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
